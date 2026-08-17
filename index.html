@@ -12,6 +12,23 @@
 </head>
 
 <body class="overflow-x-hidden bg-[#1c2226] text-white">
+    <div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-label="Loading Omar.dev">
+        <div class="loader-grid"></div>
+        <div class="loader-content">
+            <p class="loader-kicker">FULL-STACK DEVELOPER</p>
+            <div class="loader-wordmark">omar<span>.dev</span></div>
+            <div class="loader-orbit" aria-hidden="true">
+                <span class="loader-orbit-dot loader-orbit-dot-one"></span>
+                <span class="loader-orbit-dot loader-orbit-dot-two"></span>
+                <span class="loader-core">O</span>
+            </div>
+            <div class="loader-progress-row">
+                <span>Initializing portfolio</span>
+                <span id="loader-percent">0%</span>
+            </div>
+            <div class="loader-progress-track"><span id="loader-progress"></span></div>
+        </div>
+    </div>
     <div class="page-bg">
         <div class="bg-ambient bg-ambient-one"></div>
         <div class="bg-ambient bg-ambient-two"></div>
@@ -46,9 +63,9 @@
                 <div class="reveal-up mt-[10px] sm:mt-[30px] qq:mt-[50px]">
                     <p class="text-[24px] font-bold text-white sm:text-[32px]">Hello its Me </p>
                     <h1 class="mt-[13px] text-[42px] font-bold leading-[1.05] text-white sm:text-[64px]">Yazliyev Omar</h1>
-                    <p class="mt-[24px] text-[24px] font-bold text-white sm:text-[32px]">And Im a </p>
-                    <p class="mt-[24px] max-w-[605px] text-[18px] leading-[32px] font-normal text-white sm:text-xl">Uzbekistan-based Front-End
-                        Developer focused on creating accessible, responsive, and user-friendly digital experiences.</p>
+                    <p class="mt-[24px] text-[24px] font-bold text-white sm:text-[32px]">And Im a Full-Stack Developer</p>
+                    <p class="mt-[24px] max-w-[605px] text-[18px] leading-[32px] font-normal text-white sm:text-xl">Uzbekistan-based Full-Stack
+                        Developer building responsive interfaces, reliable backend systems, APIs, and database-driven web applications.</p>
                     <div class="mt-[24px] flex items-center gap-[18px] sm:gap-[25px]">
                         <div>
                             <a class="social-chip" href="https://t.me/yazliyevv">
@@ -74,9 +91,28 @@
                     <div class="mt-[40px]">
                         <button class="btn">Download CV</button>
                     </div>
+                    <div class="terminal-card mt-[34px] max-w-[560px] overflow-hidden rounded-[20px] border border-[#28465a]">
+                        <div class="flex items-center gap-[7px] border-b border-white/8 px-[16px] py-[12px]">
+                            <span class="h-[9px] w-[9px] rounded-full bg-[#ff5f57]"></span>
+                            <span class="h-[9px] w-[9px] rounded-full bg-[#febc2e]"></span>
+                            <span class="h-[9px] w-[9px] rounded-full bg-[#28c840]"></span>
+                            <span class="ml-[8px] text-[12px] font-medium text-[#7f9bab]">omar@portfolio:~</span>
+                        </div>
+                        <div class="space-y-[7px] px-[16px] py-[15px] font-mono text-[13px] leading-[22px] sm:text-[14px]">
+                            <p><span class="text-[#52a8ff]">$</span> <span class="text-white">developer.role</span></p>
+                            <p class="text-[#8cd5ff]">Full-Stack Developer</p>
+                            <p><span class="text-[#52a8ff]">$</span> <span class="text-white">developer.stack</span></p>
+                            <p class="text-[#c6d2d8]">React · NestJS · Node.js · PostgreSQL</p>
+                            <p><span class="text-[#52a8ff]">$</span> <span class="terminal-cursor text-white">_</span></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="reveal-scale relative mt-[-20px] sm:mt-[-60px] qq:mt-[-110px]">
                     <div class="hero-orbit"></div>
+                    <span class="stack-orbit stack-orbit-react" aria-label="React"><i class="fa-brands fa-react"></i></span>
+                    <span class="stack-orbit stack-orbit-ts" aria-label="TypeScript"><span class="stack-ts-logo">TS</span></span>
+                    <span class="stack-orbit stack-orbit-node" aria-label="Node.js"><i class="fa-brands fa-node-js"></i></span>
+                    <span class="stack-orbit stack-orbit-db" aria-label="Database"><i class="fa-solid fa-database"></i></span>
                     <img class="image float-image max-w-[320px] min-h-[320px] rounded-[50%] sm:max-w-[414px] sm:min-h-[406px]" src="/images/hero.png" alt="">
                 </div>
             </div>
@@ -85,39 +121,47 @@
                     <div class="mb-[30px]">
                         <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">About / Education</p>
                         <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">My learning journey</h2>
-                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">I am consistently building my front-end foundation through university studies and practical training.</p>
+                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">I am building a full-stack foundation through university studies, practical training, and real application development.</p>
                     </div>
 
-                    <div class="flex flex-col gap-[20px]">
-                        <article class="education-card reveal-up flex flex-col gap-[18px] rounded-[24px] border border-[#31414b] p-[18px] sm:p-[24px] qq:flex-row qq:items-start qq:gap-[28px]">
-                            <div class="flex min-w-[150px] items-center gap-[10px] qq:flex-col qq:items-start qq:gap-[14px]">
-                                <span class="rounded-[12px] bg-[#0080ff] px-[18px] py-[10px] text-[18px] font-bold text-white">2022</span>
-                                <span class="text-[20px] font-bold text-[#52a8ff]">-</span>
-                                <span class="rounded-[12px] border border-[#0080ff] px-[18px] py-[10px] text-[18px] font-bold text-white">2027</span>
-                            </div>
-                            <div>
-                                <h3 class="text-[22px] font-bold text-white sm:text-[26px]">Uzbekistan Tashkent Amaliy Fanlar Universiteti</h3>
-                                <p class="mt-[14px] text-[16px] leading-[28px] text-[#c6d2d8]">I studied in the Computer Engineering direction, building a strong academic base in technology, systems thinking, and professional growth.</p>
-                            </div>
-                        </article>
+                    <div class="timeline-shell reveal-up">
+                        <div class="timeline-track" aria-label="Education timeline">
+                            <button class="timeline-node" type="button" data-year="2022" data-title="Computer Engineering" data-place="Tashkent Amaliy Fanlar Universiteti" data-description="I began my Computer Engineering studies, building a strong academic foundation in technology, systems thinking, and problem solving.">
+                                <span class="timeline-dot"><i class="fa-solid fa-building-columns"></i></span>
+                                <span class="timeline-year">2022</span>
+                                <span class="timeline-label">University</span>
+                            </button>
+                            <button class="timeline-node" type="button" data-year="2025" data-title="Frontend Development" data-place="Najot Ta'lim O'quv Markazi" data-description="I strengthened HTML, CSS, Tailwind, JavaScript, and interface-building through practical, project-based learning.">
+                                <span class="timeline-dot"><i class="fa-solid fa-code"></i></span>
+                                <span class="timeline-year">2025</span>
+                                <span class="timeline-label">Najot Ta'lim</span>
+                            </button>
+                            <button class="timeline-node is-current" type="button" data-year="2026 - Now" data-title="Full-Stack Developer" data-place="Building complete web applications" data-description="I now combine frontend engineering with Node.js, NestJS, APIs, and databases to build full-stack products from interface to infrastructure.">
+                                <span class="timeline-dot"><i class="fa-solid fa-code-branch"></i></span>
+                                <span class="timeline-year">Now</span>
+                                <span class="timeline-label">Full-Stack</span>
+                            </button>
+                            <button class="timeline-node" type="button" data-year="2027" data-title="University Graduation" data-place="Tashkent Amaliy Fanlar Universiteti" data-description="Completing my Computer Engineering degree while continuing to grow through real full-stack product work.">
+                                <span class="timeline-dot"><i class="fa-solid fa-flag-checkered"></i></span>
+                                <span class="timeline-year">2027</span>
+                                <span class="timeline-label">Next goal</span>
+                            </button>
+                        </div>
 
-                        <article class="education-card reveal-up flex flex-col gap-[18px] rounded-[24px] border border-[#31414b] p-[18px] sm:p-[24px] qq:flex-row qq:items-start qq:gap-[28px]">
-                            <div class="min-w-[150px]">
-                                <span class="inline-block rounded-[12px] bg-[#0080ff] px-[18px] py-[10px] text-[18px] font-bold text-white">2025</span>
-                            </div>
-                            <div>
-                                <h3 class="text-[22px] font-bold text-white sm:text-[26px]">Najot Ta'lim O'quv Markazi</h3>
-                                <p class="mt-[14px] text-[16px] leading-[28px] text-[#c6d2d8]">I studied in the Frontend direction, where I strengthened my HTML, CSS, Tailwind, and interface-building skills through practical lessons.</p>
-                            </div>
+                        <article id="timeline-detail" class="timeline-detail">
+                            <span id="timeline-year" class="timeline-detail-year">2026 - Now</span>
+                            <p id="timeline-place" class="timeline-detail-place">Building complete web applications</p>
+                            <h3 id="timeline-title" class="timeline-detail-title">Full-Stack Developer</h3>
+                            <p id="timeline-description" class="timeline-detail-copy">I now combine frontend engineering with Node.js, NestJS, APIs, and databases to build full-stack products from interface to infrastructure.</p>
                         </article>
                     </div>
                 </div>
             </section>
             <section id="skills" class="mt-[10px] scroll-mt-[40px] pb-[40px] sm:mt-[20px]">
                 <div class="mb-[26px] reveal-up">
-                    <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Core / Skills</p>
-                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Technologies I work with</h2>
-                    <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">These are the main tools I use while building responsive interfaces and modern frontend layouts.</p>
+                    <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Full-Stack / Skills</p>
+                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Technologies I work with end to end</h2>
+                    <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">From polished user interfaces to APIs and data, I use this stack to build complete web applications.</p>
                 </div>
 
                 <div class="grid gap-[18px] sm:grid-cols-2 xl:grid-cols-3">
@@ -155,6 +199,42 @@
                         <i class="fa-solid fa-code text-[46px] text-[#3178c6]"></i>
                         <h3 class="mt-[16px] text-[22px] font-bold text-white">TypeScript</h3>
                         <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Strongly typed JavaScript.</p>
+                    </article>
+
+                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
+                        <i class="fa-brands fa-node-js text-[46px] text-[#7cc043]"></i>
+                        <h3 class="mt-[16px] text-[22px] font-bold text-white">Node.js</h3>
+                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Backend services and server-side JavaScript.</p>
+                    </article>
+
+                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
+                        <i class="fa-solid fa-server text-[46px] text-[#a5b4fc]"></i>
+                        <h3 class="mt-[16px] text-[22px] font-bold text-white">Express</h3>
+                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">RESTful APIs, routing, and backend logic.</p>
+                    </article>
+
+                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
+                        <i class="fa-solid fa-layer-group text-[46px] text-[#e0234e]"></i>
+                        <h3 class="mt-[16px] text-[22px] font-bold text-white">NestJS</h3>
+                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Scalable backend architecture and modular APIs.</p>
+                    </article>
+
+                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
+                        <i class="fa-solid fa-database text-[46px] text-[#60a5fa]"></i>
+                        <h3 class="mt-[16px] text-[22px] font-bold text-white">PostgreSQL</h3>
+                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Structured data, relations, and SQL queries.</p>
+                    </article>
+
+                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
+                        <i class="fa-solid fa-leaf text-[46px] text-[#4ade80]"></i>
+                        <h3 class="mt-[16px] text-[22px] font-bold text-white">MongoDB</h3>
+                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Flexible document storage for application data.</p>
+                    </article>
+
+                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
+                        <i class="fa-solid fa-plug text-[46px] text-[#fbbf24]"></i>
+                        <h3 class="mt-[16px] text-[22px] font-bold text-white">REST APIs</h3>
+                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Connecting frontend, backend, and external services.</p>
                     </article>
                 </div>
             </section>
@@ -295,7 +375,7 @@
                     <div class="mb-[26px]">
                         <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] max-w-max text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Get In Touch</p>
                         <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Lets work together</h2>
-                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">If you need a responsive website, portfolio, or frontend help, you can contact me through the channels below.</p>
+                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">If you need a complete web application, backend API, database integration, or a responsive website, you can contact me through the channels below.</p>
                     </div>
 
                     <div class="grid gap-[18px] md:grid-cols-2">
@@ -354,6 +434,32 @@
 </body>
 
 <script>
+    const pageLoader = document.getElementById("page-loader");
+    const loaderPercent = document.getElementById("loader-percent");
+    const loaderProgress = document.getElementById("loader-progress");
+
+    window.addEventListener("load", () => {
+        const loadingDuration = 3600;
+        const startTime = performance.now();
+
+        const updateLoader = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(Math.round((elapsed / loadingDuration) * 100), 100);
+
+            loaderPercent.textContent = `${progress}%`;
+            loaderProgress.style.width = `${progress}%`;
+
+            if (progress < 100) {
+                window.requestAnimationFrame(updateLoader);
+                return;
+            }
+
+            window.setTimeout(() => pageLoader.classList.add("is-hidden"), 180);
+        };
+
+        window.requestAnimationFrame(updateLoader);
+    });
+
     // ── Mobile Menu ──
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -382,6 +488,25 @@
             });
         });
     }
+
+    // ── Education Timeline ──
+    const timelineNodes = document.querySelectorAll(".timeline-node");
+    const timelineYear = document.getElementById("timeline-year");
+    const timelinePlace = document.getElementById("timeline-place");
+    const timelineTitle = document.getElementById("timeline-title");
+    const timelineDescription = document.getElementById("timeline-description");
+
+    timelineNodes.forEach((node) => {
+        node.addEventListener("click", () => {
+            timelineNodes.forEach((item) => item.classList.remove("is-current"));
+            node.classList.add("is-current");
+
+            timelineYear.textContent = node.dataset.year;
+            timelinePlace.textContent = node.dataset.place;
+            timelineTitle.textContent = node.dataset.title;
+            timelineDescription.textContent = node.dataset.description;
+        });
+    });
 
     // ── Scroll Reveal ──
     const revealEls = document.querySelectorAll(".reveal-up, .reveal-scale");
