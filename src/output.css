@@ -828,12 +828,9 @@ body {
   background: linear-gradient(135deg, #168cff, #0059b3);
   box-shadow: 0 0 24px rgba(0, 128, 255, 0.48);
   color: #fff;
-  font-size: 23px;
+  font-size: 17px;
   font-weight: 800;
   transform: rotate(-45deg);
-}
-.loader-core::first-letter {
-  transform: rotate(45deg);
 }
 .loader-orbit-dot {
   position: absolute;
