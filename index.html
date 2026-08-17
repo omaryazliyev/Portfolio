@@ -98,12 +98,12 @@
                             <span class="h-[9px] w-[9px] rounded-full bg-[#28c840]"></span>
                             <span class="ml-[8px] text-[12px] font-medium text-[#7f9bab]">omar@portfolio:~</span>
                         </div>
-                        <div class="space-y-[7px] px-[16px] py-[15px] font-mono text-[13px] leading-[22px] sm:text-[14px]">
+                        <div class="terminal-body px-[16px] py-[15px] font-mono text-[13px] leading-[22px] sm:text-[14px]" aria-live="polite">
                             <p><span class="text-[#52a8ff]">$</span> <span class="text-white">developer.role</span></p>
                             <p class="text-[#8cd5ff]">Full-Stack Developer</p>
                             <p><span class="text-[#52a8ff]">$</span> <span class="text-white">developer.stack</span></p>
                             <p class="text-[#c6d2d8]">React · NestJS · Node.js · PostgreSQL</p>
-                            <p><span class="text-[#52a8ff]">$</span> <span class="terminal-cursor text-white">_</span></p>
+                            <p class="terminal-type-line"><span class="text-[#52a8ff]">$</span> <span id="terminal-typed" class="text-white"></span><span class="terminal-cursor text-white">_</span></p>
                         </div>
                     </div>
                 </div>
@@ -239,134 +239,130 @@
                 </div>
             </section>
 
-            <section id="projects" style="margin-top:50px;scroll-margin-top:40px;padding-bottom:80px;">
-                <div style="margin-bottom:40px;" class="reveal-up">
-                    <p style="display:inline-block;border-radius:999px;border:1px solid #0080ff;background:rgba(0,128,255,0.1);padding:8px 16px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#52a8ff;">Portfolio / Projects</p>
-                    <h2 style="margin-top:18px;font-size:38px;font-weight:700;color:#fff;">Some projects I can proudly show</h2>
-                    <p style="margin-top:16px;max-width:760px;font-size:18px;line-height:28px;color:#b9c7cf;">Here are real projects I have built — from ERP systems to e-commerce and movie apps.</p>
+            <section id="projects" class="mt-[50px] scroll-mt-[40px] pb-[80px]">
+                <div class="mb-[34px] reveal-up">
+                    <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Portfolio / Projects</p>
+                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Selected work with real product flow</h2>
+                    <p class="mt-[16px] max-w-[780px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">A few projects that show my frontend, API integration, dashboard, and responsive interface work.</p>
                 </div>
 
-                <div style="display:grid;gap:24px;grid-template-columns:1fr;" class="projects-grid">
-
-                    <!-- TM Edu -->
-                    <article class="project-card reveal-up" style="border-radius:28px;border:1px solid #1e2d38;overflow:hidden;display:flex;flex-direction:column;">
-                        <!-- Card top banner -->
-                        <div style="position:relative;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#0a1628 0%,#0d2040 50%,#061830 100%);border-bottom:1px solid rgba(0,128,255,0.2);">
-                            <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(0,128,255,0.25) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(82,168,255,0.15) 0%,transparent 50%);"></div>
-                            <div style="position:relative;z-index:10;">
-                                <div style="width:62px;height:62px;border-radius:18px;background:rgba(0,128,255,0.15);border:1px solid rgba(0,128,255,0.4);display:flex;align-items:center;justify-content:center;box-shadow:0 0 28px rgba(0,128,255,0.4);">
-                                    <i class="fa-solid fa-graduation-cap" style="font-size:26px;color:#52a8ff;"></i>
+                <div class="projects-grid">
+                    <article class="project-card project-card-blue reveal-up">
+                        <div class="project-preview">
+                            <span class="project-badge">ERP System</span>
+                            <div class="project-actions">
+                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/TM-Edu" target="_blank" aria-label="Open TM Edu GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a class="project-icon-link" href="https://najotedu.vercel.app/" target="_blank" aria-label="Open TM Edu live demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <div class="project-preview-content">
+                                <span class="project-preview-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                                <div>
+                                    <p class="project-preview-kicker">Dashboard platform</p>
+                                    <h3>TM Edu</h3>
                                 </div>
                             </div>
-                            <span style="position:absolute;top:14px;left:16px;border-radius:999px;background:#0080ff;padding:5px 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#fff;">ERP System</span>
-                            <div style="position:absolute;top:14px;right:14px;display:flex;align-items:center;gap:8px;">
-                                <a href="https://github.com/omaryazliyev2004-op/TM-Edu" target="_blank" style="width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;">
-                                    <i class="fa-brands fa-github" style="font-size:16px;color:#b9c7cf;"></i>
-                                </a>
-                                <a href="https://najotedu.vercel.app/" target="_blank" style="width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;">
-                                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:13px;color:#b9c7cf;"></i>
-                                </a>
-                            </div>
                         </div>
-                        <!-- Card body -->
-                        <div style="padding:22px;display:flex;flex-direction:column;flex:1;">
-                            <h3 style="font-size:20px;font-weight:700;color:#fff;line-height:1.3;">TM Edu — Student & Teacher ERP</h3>
-                            <p style="margin-top:10px;font-size:14px;line-height:24px;color:#9fb0bb;">Talabalar va o'qituvchilarni boshqarish uchun ishlab chiqilgan to'liq ERP tizimi.</p>
-                            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:8px;">
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#0080ff;"></i> Student & Teacher management</li>
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#0080ff;"></i> Dashboard & CRUD operations</li>
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#0080ff;"></i> Responsive design</li>
+                        <div class="project-body">
+                            <h3>Student & Teacher ERP</h3>
+                            <p>Talabalar va o'qituvchilarni boshqarish uchun dashboard, CRUD flow va responsive admin interface.</p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-check"></i> Student and teacher management</li>
+                                <li><i class="fa-solid fa-check"></i> Dashboard and CRUD operations</li>
+                                <li><i class="fa-solid fa-check"></i> Responsive layout</li>
                             </ul>
-                            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;">
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#52a8ff;background:rgba(0,128,255,0.12);border:1px solid rgba(0,128,255,0.25);">React.js</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#52a8ff;background:rgba(0,128,255,0.12);border:1px solid rgba(0,128,255,0.25);">Tailwind CSS</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#52a8ff;background:rgba(0,128,255,0.12);border:1px solid rgba(0,128,255,0.25);">CRUD</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#52a8ff;background:rgba(0,128,255,0.12);border:1px solid rgba(0,128,255,0.25);">Git</span>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>CRUD</span>
+                                <span>Git</span>
                             </div>
-                            <a href="https://najotedu.vercel.app/" target="_blank" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:11px;font-size:14px;font-weight:700;color:#fff;text-decoration:none;background:linear-gradient(135deg,#0080ff 0%,#0059b3 100%);box-shadow:0 6px 18px rgba(0,128,255,0.35);border:1px solid rgba(255,255,255,0.12);transition:filter 0.3s;">
-                                <i class="fa-solid fa-eye" style="font-size:13px;"></i> Live Demo
+                            <a class="project-demo-link" href="https://najotedu.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-eye"></i> Live Demo
                             </a>
                         </div>
                     </article>
 
-                    <!-- Movies App -->
-                    <article class="project-card reveal-up" style="border-radius:28px;border:1px solid #1e2d38;overflow:hidden;display:flex;flex-direction:column;">
-                        <div style="position:relative;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#140a28 0%,#1e0d40 50%,#0f0620 100%);border-bottom:1px solid rgba(123,0,255,0.2);">
-                            <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(130,0,255,0.2) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(180,100,255,0.12) 0%,transparent 50%);"></div>
-                            <div style="position:relative;z-index:10;">
-                                <div style="width:62px;height:62px;border-radius:18px;background:rgba(130,0,255,0.15);border:1px solid rgba(130,0,255,0.4);display:flex;align-items:center;justify-content:center;box-shadow:0 0 28px rgba(130,0,255,0.4);">
-                                    <i class="fa-solid fa-film" style="font-size:26px;color:#b47fff;"></i>
+                    <article class="project-card project-card-violet reveal-up">
+                        <div class="project-preview">
+                            <span class="project-badge">Movies App</span>
+                            <div class="project-actions">
+                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/movies" target="_blank" aria-label="Open Movies App GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a class="project-icon-link" href="https://movies-ivory-three.vercel.app/" target="_blank" aria-label="Open Movies App live demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <div class="project-preview-content">
+                                <span class="project-preview-icon"><i class="fa-solid fa-film"></i></span>
+                                <div>
+                                    <p class="project-preview-kicker">API search app</p>
+                                    <h3>Movies</h3>
                                 </div>
                             </div>
-                            <span style="position:absolute;top:14px;left:16px;border-radius:999px;background:#7b00ff;padding:5px 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#fff;">Movies App</span>
-                            <div style="position:absolute;top:14px;right:14px;display:flex;align-items:center;gap:8px;">
-                                <a href="https://github.com/omaryazliyev2004-op/movies" target="_blank" style="width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;">
-                                    <i class="fa-brands fa-github" style="font-size:16px;color:#b9c7cf;"></i>
-                                </a>
-                                <a href="https://movies-ivory-three.vercel.app/" target="_blank" style="width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;">
-                                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:13px;color:#b9c7cf;"></i>
-                                </a>
-                            </div>
                         </div>
-                        <div style="padding:22px;display:flex;flex-direction:column;flex:1;">
-                            <h3 style="font-size:20px;font-weight:700;color:#fff;line-height:1.3;">Movies App — Film Qidirish Ilovasi</h3>
-                            <p style="margin-top:10px;font-size:14px;line-height:24px;color:#9fb0bb;">Kinolarni qidirish va ko'rish uchun yaratilgan REST API asosidagi web-ilova.</p>
-                            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:8px;">
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#9b40ff;"></i> Movie search & details</li>
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#9b40ff;"></i> Category filtering</li>
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#9b40ff;"></i> Responsive design</li>
+                        <div class="project-body">
+                            <h3>Film Search Interface</h3>
+                            <p>Kinolarni qidirish, ko'rish va category bo'yicha saralash uchun REST API asosidagi web-ilova.</p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-check"></i> Movie search and details</li>
+                                <li><i class="fa-solid fa-check"></i> Category filtering</li>
+                                <li><i class="fa-solid fa-check"></i> API-driven UI states</li>
                             </ul>
-                            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;">
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#b47fff;background:rgba(130,0,255,0.12);border:1px solid rgba(130,0,255,0.3);">React.js</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#b47fff;background:rgba(130,0,255,0.12);border:1px solid rgba(130,0,255,0.3);">Tailwind CSS</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#b47fff;background:rgba(130,0,255,0.12);border:1px solid rgba(130,0,255,0.3);">REST API</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#b47fff;background:rgba(130,0,255,0.12);border:1px solid rgba(130,0,255,0.3);">Git</span>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>REST API</span>
+                                <span>Git</span>
                             </div>
-                            <a href="https://movies-ivory-three.vercel.app/" target="_blank" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:11px;font-size:14px;font-weight:700;color:#fff;text-decoration:none;background:linear-gradient(135deg,#7b00ff 0%,#5500b3 100%);box-shadow:0 6px 18px rgba(123,0,255,0.35);border:1px solid rgba(255,255,255,0.12);">
-                                <i class="fa-solid fa-eye" style="font-size:13px;"></i> Live Demo
+                            <a class="project-demo-link" href="https://movies-ivory-three.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-eye"></i> Live Demo
                             </a>
                         </div>
                     </article>
 
-                    <!-- E-Commerce -->
-                    <article class="project-card reveal-up" style="border-radius:28px;border:1px solid #1e2d38;overflow:hidden;display:flex;flex-direction:column;">
-                        <div style="position:relative;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#0a2010 0%,#0d3020 50%,#061808 100%);border-bottom:1px solid rgba(0,200,80,0.2);">
-                            <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(0,200,80,0.2) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(0,255,100,0.12) 0%,transparent 50%);"></div>
-                            <div style="position:relative;z-index:10;">
-                                <div style="width:62px;height:62px;border-radius:18px;background:rgba(0,200,80,0.15);border:1px solid rgba(0,200,80,0.4);display:flex;align-items:center;justify-content:center;box-shadow:0 0 28px rgba(0,200,80,0.4);">
-                                    <i class="fa-solid fa-cart-shopping" style="font-size:26px;color:#4ade80;"></i>
+                    <article class="project-card project-card-green reveal-up">
+                        <div class="project-preview">
+                            <span class="project-badge">E-Commerce</span>
+                            <div class="project-actions">
+                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/ecommerce-react" target="_blank" aria-label="Open E-Commerce GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a class="project-icon-link" href="https://ecommerce-react-irx2.vercel.app/" target="_blank" aria-label="Open E-Commerce live demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <div class="project-preview-content">
+                                <span class="project-preview-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                                <div>
+                                    <p class="project-preview-kicker">Shopping flow</p>
+                                    <h3>Store App</h3>
                                 </div>
                             </div>
-                            <span style="position:absolute;top:14px;left:16px;border-radius:999px;background:#16a34a;padding:5px 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#fff;">E-Commerce</span>
-                            <div style="position:absolute;top:14px;right:14px;display:flex;align-items:center;gap:8px;">
-                                <a href="https://github.com/omaryazliyev2004-op/ecommerce-react" target="_blank" style="width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;">
-                                    <i class="fa-brands fa-github" style="font-size:16px;color:#b9c7cf;"></i>
-                                </a>
-                                <a href="https://ecommerce-react-irx2.vercel.app/" target="_blank" style="width:32px;height:32px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;">
-                                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:13px;color:#b9c7cf;"></i>
-                                </a>
-                            </div>
                         </div>
-                        <div style="padding:22px;display:flex;flex-direction:column;flex:1;">
-                            <h3 style="font-size:20px;font-weight:700;color:#fff;line-height:1.3;">E-Commerce — Onlayn Do'kon Ilovasi</h3>
-                            <p style="margin-top:10px;font-size:14px;line-height:24px;color:#9fb0bb;">Mahsulotlar katalogi, qidirish va savat funksiyalari bilan to'liq onlayn savdo ilovasi.</p>
-                            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:8px;">
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#16a34a;"></i> Product catalog & search</li>
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#16a34a;"></i> Shopping cart</li>
-                                <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#c6d2d8;"><i class="fa-solid fa-check" style="font-size:11px;color:#16a34a;"></i> Filtering & responsive design</li>
+                        <div class="project-body">
+                            <h3>Online Store Application</h3>
+                            <p>Mahsulotlar katalogi, search, filtering va savat funksiyalari bilan to'liq responsive do'kon ilovasi.</p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-check"></i> Product catalog and search</li>
+                                <li><i class="fa-solid fa-check"></i> Shopping cart flow</li>
+                                <li><i class="fa-solid fa-check"></i> Filtering and responsive design</li>
                             </ul>
-                            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;">
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#4ade80;background:rgba(0,200,80,0.12);border:1px solid rgba(0,200,80,0.3);">React.js</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#4ade80;background:rgba(0,200,80,0.12);border:1px solid rgba(0,200,80,0.3);">Tailwind CSS</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#4ade80;background:rgba(0,200,80,0.12);border:1px solid rgba(0,200,80,0.3);">REST API</span>
-                                <span style="border-radius:8px;padding:5px 10px;font-size:11px;font-weight:600;color:#4ade80;background:rgba(0,200,80,0.12);border:1px solid rgba(0,200,80,0.3);">Cart</span>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>REST API</span>
+                                <span>Cart</span>
                             </div>
-                            <a href="https://ecommerce-react-irx2.vercel.app/" target="_blank" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:11px;font-size:14px;font-weight:700;color:#fff;text-decoration:none;background:linear-gradient(135deg,#16a34a 0%,#0d6b30 100%);box-shadow:0 6px 18px rgba(22,163,74,0.35);border:1px solid rgba(255,255,255,0.12);">
-                                <i class="fa-solid fa-eye" style="font-size:13px;"></i> Live Demo
+                            <a class="project-demo-link" href="https://ecommerce-react-irx2.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-eye"></i> Live Demo
                             </a>
                         </div>
                     </article>
-
                 </div>
             </section>
 
@@ -507,6 +503,29 @@
             timelineDescription.textContent = node.dataset.description;
         });
     });
+
+    // ── Terminal Typing ──
+    const terminalTyped = document.getElementById("terminal-typed");
+    const terminalCommand = `console.log("Hello world")`;
+
+    if (terminalTyped) {
+        const typeTerminalCommand = () => {
+            let index = 0;
+            terminalTyped.textContent = "";
+
+            const typeCommand = window.setInterval(() => {
+                terminalTyped.textContent = terminalCommand.slice(0, index + 1);
+                index += 1;
+
+                if (index === terminalCommand.length) {
+                    window.clearInterval(typeCommand);
+                    window.setTimeout(typeTerminalCommand, 2000);
+                }
+            }, 70);
+        };
+
+        window.setTimeout(typeTerminalCommand, 4300);
+    }
 
     // ── Scroll Reveal ──
     const revealEls = document.querySelectorAll(".reveal-up, .reveal-scale");
