@@ -1,17 +1,36 @@
-<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="64" height="64" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Yazliyev logo</title>
   <defs>
-    <linearGradient id="omarText" x1="18" y1="18" x2="184" y2="54" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8FBFF"/>
-      <stop offset="0.45" stop-color="#D8E9FF"/>
-      <stop offset="1" stop-color="#7CC8FF"/>
+    <linearGradient id="yFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f6f8"/>
+      <stop offset="55%" stop-color="#c7cdd6"/>
+      <stop offset="100%" stop-color="#dfe4ea"/>
     </linearGradient>
-    <filter id="textGlow" x="0" y="0" width="220" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="5.5" result="blur"/>
-      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+    <linearGradient id="oRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7CC8FF"/>
+      <stop offset="100%" stop-color="#e7e9ec"/>
+    </linearGradient>
+    <filter id="markGlow" x="-80%" y="-80%" width="260%" height="260%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.35
+                0 0 0 0 0.55
+                0 0 0 0 1
+                0 0 0 0.5 0" result="blueBlur"/>
+      <feMerge>
+        <feMergeNode in="blueBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <g filter="url(#textGlow)">
-    <text x="14" y="43" fill="url(#omarText)" font-family="Georgia, Times New Roman, serif" font-size="34" font-style="italic" font-weight="700" letter-spacing="4">OMAR</text>
+  <!-- Y: dominant needle mark -->
+  <g filter="url(#markGlow)">
+    <path d="M50 46 L128 138 L119 149 L64 90 Z" fill="url(#yFill)"/>
+    <path d="M206 46 L132 148 L123 137 L192 76 Z" fill="url(#yFill)"/>
+    <path d="M128 138 L138 149 L118 202 L108 195 Z" fill="url(#yFill)"/>
   </g>
+
+  <!-- O: ring fused with the Y at its crossing points -->
+  <circle cx="128" cy="122" r="66" fill="none" stroke="url(#oRing)" stroke-width="4.5" filter="url(#markGlow)" opacity="0.95"/>
 </svg>

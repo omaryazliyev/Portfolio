@@ -12,15 +12,15 @@
 </head>
 
 <body class="overflow-x-hidden bg-[#1c2226] text-white">
-    <div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-label="Loading Omar.dev">
+    <div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-label="Loading Believe in yourself">
         <div class="loader-grid"></div>
         <div class="loader-content">
             <p class="loader-kicker">FULL-STACK DEVELOPER</p>
-            <div class="loader-wordmark">omar<span>.dev</span></div>
+            <div class="loader-wordmark loader-believe">Believe <span>in yourself</span></div>
             <div class="loader-orbit" aria-hidden="true">
                 <span class="loader-orbit-dot loader-orbit-dot-one"></span>
                 <span class="loader-orbit-dot loader-orbit-dot-two"></span>
-                <span class="loader-core">&lt;/&gt;</span>
+                <span class="loader-core"><img src="/images/logo-omar.svg" alt="" style="width: 78px; height: 78px; transform: rotate(45deg);"></span>
             </div>
             <div class="loader-progress-row">
                 <span>Initializing portfolio</span>
@@ -34,38 +34,49 @@
         <div class="bg-ambient bg-ambient-two"></div>
         <div class="bg-ambient bg-ambient-three"></div>
         <div class="container pt-[35px] sm:pt-[53px]">
-            <header class="glass-panel reveal-up fixed left-1/2 top-[2px] z-50 flex w-[calc(100%-40px)] max-w-[1200px] -translate-x-1/2 items-center justify-between rounded-[24px] px-[18px] py-[16px] sm:top-[4px] sm:w-[calc(100%-40px)] sm:px-[24px]">
+            <header
+                class="site-header glass-panel reveal-up fixed left-1/2 top-[2px] z-50 flex w-[calc(100%-40px)] max-w-[1200px] -translate-x-1/2 items-center justify-between rounded-[24px] px-[18px] py-[10px] sm:top-[4px] sm:w-[calc(100%-40px)] sm:px-[24px] sm:py-[12px]">
                 <div>
-                    <a href="#home">
-                        <img src="/images/logo-omar.svg" alt="Omar logo" class="w-[180px] sm:w-[220px]">
+                    <a class="brand-link" href="#home" aria-label="Go to home">
+                        <img src="/images/logo-omar.svg" alt="Yazliyev YO logo" class="brand-logo w-[64px] sm:w-[76px]">
                     </a>
                 </div>
-                <div class="hidden vv:flex items-center gap-[76px]">
-                    <a class="nav-item font-bold text-xl text-white" href="#home">Home</a>
-                    <a class="nav-item font-bold text-xl text-white" href="#education">About</a>
-                    <a class="nav-item font-bold text-xl text-white" href="#skills">Skills</a>
-                    <a class="nav-item font-bold text-xl text-white" href="#projects">Portfolio</a>
-                    <a class="nav-item font-bold text-xl text-white" href="#contact">Contact</a>
-                </div>
-                <button id="menu-toggle" class="menu-toggle vv:!hidden" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <i class="fa-solid fa-bars text-[28px]" style="color: #0080FF;"></i>
+                <nav class="nav-shell hidden vv:flex items-center" aria-label="Main navigation">
+                    <a class="nav-item font-bold text-white" href="#home">Home</a>
+                    <a class="nav-item font-bold text-white" href="#education">About</a>
+                    <a class="nav-item font-bold text-white" href="#skills">Skills</a>
+                    <a class="nav-item font-bold text-white" href="#projects">Projects</a>
+                </nav>
+                <a class="header-cta hidden vv:inline-flex" href="#contact">
+                    <span>Contact</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button id="menu-toggle" class="menu-toggle vv:!hidden" type="button" aria-label="Open menu"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars text-[24px]" style="color: #8bd5ff;"></i>
                 </button>
             </header>
             <div id="mobile-menu" class="mobile-menu vv:!hidden">
-                <a class="mobile-link" href="#home">Home</a>
-                <a class="mobile-link" href="#education">About</a>
-                <a class="mobile-link" href="#skills">Skills</a>
-                <a class="mobile-link" href="#projects">Portfolio</a>
-                <a class="mobile-link" href="#contact">Contact</a>
+                <a class="mobile-link" href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                <a class="mobile-link" href="#education"><i class="fa-solid fa-user-graduate"></i><span>About</span></a>
+                <a class="mobile-link" href="#skills"><i class="fa-solid fa-layer-group"></i><span>Skills</span></a>
+                <a class="mobile-link" href="#projects"><i class="fa-solid fa-briefcase"></i><span>Projects</span></a>
+                <a class="mobile-link mobile-link-cta" href="#contact"><i
+                        class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
             </div>
             <div id="home" class="h-[86px] sm:h-[90px]"></div>
-            <div class="mt-[80px] flex flex-col-reverse items-center justify-between gap-[40px] qq:mt-[120px] qq:flex-row">
+            <div
+                class="mt-[80px] flex flex-col-reverse items-center justify-between gap-[40px] qq:mt-[120px] qq:flex-row">
                 <div class="reveal-up mt-[10px] sm:mt-[30px] qq:mt-[50px]">
                     <p class="text-[24px] font-bold text-white sm:text-[32px]">Hello its Me </p>
-                    <h1 class="mt-[13px] text-[42px] font-bold leading-[1.05] text-white sm:text-[64px]">Yazliyev Omar</h1>
-                    <p class="mt-[24px] text-[24px] font-bold text-white sm:text-[32px]">And Im a Full-Stack Developer</p>
-                    <p class="mt-[24px] max-w-[605px] text-[18px] leading-[32px] font-normal text-white sm:text-xl">Uzbekistan-based Full-Stack
-                        Developer building responsive interfaces, reliable backend systems, APIs, and database-driven web applications.</p>
+                    <h1 class="mt-[13px] text-[42px] font-bold leading-[1.05] text-white sm:text-[64px]">Yazliyev Omar
+                    </h1>
+                    <p class="mt-[24px] text-[24px] font-bold text-white sm:text-[32px]">And Im a Full-Stack Developer
+                    </p>
+                    <p class="mt-[24px] max-w-[605px] text-[18px] leading-[32px] font-normal text-white sm:text-xl">
+                        Uzbekistan-based Full-Stack
+                        Developer building responsive interfaces, reliable backend systems, APIs, and database-driven
+                        web applications.</p>
                     <div class="mt-[24px] flex items-center gap-[18px] sm:gap-[25px]">
                         <div>
                             <a class="social-chip" href="https://t.me/yazliyevv">
@@ -91,57 +102,79 @@
                     <div class="mt-[40px]">
                         <button class="btn">Download CV</button>
                     </div>
-                    <div class="terminal-card mt-[34px] max-w-[560px] overflow-hidden rounded-[20px] border border-[#28465a]">
+                    <div
+                        class="terminal-card mt-[34px] max-w-[560px] overflow-hidden rounded-[20px] border border-[#28465a]">
                         <div class="flex items-center gap-[7px] border-b border-white/8 px-[16px] py-[12px]">
                             <span class="h-[9px] w-[9px] rounded-full bg-[#ff5f57]"></span>
                             <span class="h-[9px] w-[9px] rounded-full bg-[#febc2e]"></span>
                             <span class="h-[9px] w-[9px] rounded-full bg-[#28c840]"></span>
                             <span class="ml-[8px] text-[12px] font-medium text-[#7f9bab]">omar@portfolio:~</span>
                         </div>
-                        <div class="terminal-body px-[16px] py-[15px] font-mono text-[13px] leading-[22px] sm:text-[14px]" aria-live="polite">
+                        <div class="terminal-body px-[16px] py-[15px] font-mono text-[13px] leading-[22px] sm:text-[14px]"
+                            aria-live="polite">
                             <p><span class="text-[#52a8ff]">$</span> <span class="text-white">developer.role</span></p>
                             <p class="text-[#8cd5ff]">Full-Stack Developer</p>
                             <p><span class="text-[#52a8ff]">$</span> <span class="text-white">developer.stack</span></p>
                             <p class="text-[#c6d2d8]">React · NestJS · Node.js · PostgreSQL</p>
-                            <p class="terminal-type-line"><span class="text-[#52a8ff]">$</span> <span id="terminal-typed" class="text-white"></span><span class="terminal-cursor text-white">_</span></p>
+                            <p class="terminal-type-line"><span class="text-[#52a8ff]">$</span> <span
+                                    id="terminal-typed" class="text-white"></span><span
+                                    class="terminal-cursor text-white">_</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="reveal-scale relative mt-[-20px] sm:mt-[-60px] qq:mt-[-110px]">
                     <div class="hero-orbit"></div>
-                    <span class="stack-orbit stack-orbit-react" aria-label="React"><i class="fa-brands fa-react"></i></span>
-                    <span class="stack-orbit stack-orbit-ts" aria-label="TypeScript"><span class="stack-ts-logo">TS</span></span>
-                    <span class="stack-orbit stack-orbit-node" aria-label="Node.js"><i class="fa-brands fa-node-js"></i></span>
-                    <span class="stack-orbit stack-orbit-db" aria-label="Database"><i class="fa-solid fa-database"></i></span>
-                    <img class="image float-image max-w-[320px] min-h-[320px] rounded-[50%] sm:max-w-[414px] sm:min-h-[406px]" src="/images/hero.png" alt="">
+                    <span class="stack-orbit stack-orbit-react" aria-label="React"><i
+                            class="fa-brands fa-react"></i></span>
+                    <span class="stack-orbit stack-orbit-ts" aria-label="TypeScript"><span
+                            class="stack-ts-logo">TS</span></span>
+                    <span class="stack-orbit stack-orbit-node" aria-label="Node.js"><i
+                            class="fa-brands fa-node-js"></i></span>
+                    <span class="stack-orbit stack-orbit-db" aria-label="Database"><i
+                            class="fa-solid fa-database"></i></span>
+                    <img class="image float-image max-w-[320px] min-h-[320px] rounded-[50%] sm:max-w-[414px] sm:min-h-[406px]"
+                        src="/images/hero.png" alt="">
                 </div>
             </div>
             <section id="education" class="mt-[90px] scroll-mt-[40px] pb-[60px] sm:mt-[110px]">
-                <div class="glass-panel reveal-up rounded-[28px] border border-[#2c3942] p-[20px] sm:p-[28px] qq:p-[36px]">
+                <div
+                    class="glass-panel reveal-up rounded-[28px] border border-[#2c3942] p-[20px] sm:p-[28px] qq:p-[36px]">
                     <div class="mb-[30px]">
-                        <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">About / Education</p>
+                        <p
+                            class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">
+                            About / Education</p>
                         <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">My learning journey</h2>
-                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">I am building a full-stack foundation through university studies, practical training, and real application development.</p>
+                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">I am
+                            building a full-stack foundation through university studies, practical training, and real
+                            application development.</p>
                     </div>
 
                     <div class="timeline-shell reveal-up">
                         <div class="timeline-track" aria-label="Education timeline">
-                            <button class="timeline-node" type="button" data-year="2022" data-title="Computer Engineering" data-place="Tashkent Amaliy Fanlar Universiteti" data-description="I began my Computer Engineering studies, building a strong academic foundation in technology, systems thinking, and problem solving.">
+                            <button class="timeline-node" type="button" data-year="2022"
+                                data-title="Computer Engineering" data-place="Tashkent Amaliy Fanlar Universiteti"
+                                data-description="I began my Computer Engineering studies, building a strong academic foundation in technology, systems thinking, and problem solving.">
                                 <span class="timeline-dot"><i class="fa-solid fa-building-columns"></i></span>
                                 <span class="timeline-year">2022</span>
                                 <span class="timeline-label">University</span>
                             </button>
-                            <button class="timeline-node" type="button" data-year="2025" data-title="Frontend Development" data-place="Najot Ta'lim O'quv Markazi" data-description="I strengthened HTML, CSS, Tailwind, JavaScript, and interface-building through practical, project-based learning.">
+                            <button class="timeline-node" type="button" data-year="2025"
+                                data-title="Frontend Development" data-place="Najot Ta'lim O'quv Markazi"
+                                data-description="I strengthened HTML, CSS, Tailwind, JavaScript, and interface-building through practical, project-based learning.">
                                 <span class="timeline-dot"><i class="fa-solid fa-code"></i></span>
                                 <span class="timeline-year">2025</span>
                                 <span class="timeline-label">Najot Ta'lim</span>
                             </button>
-                            <button class="timeline-node is-current" type="button" data-year="2026 - Now" data-title="Full-Stack Developer" data-place="Building complete web applications" data-description="I now combine frontend engineering with Node.js, NestJS, APIs, and databases to build full-stack products from interface to infrastructure.">
+                            <button class="timeline-node is-current" type="button" data-year="2026 - Now"
+                                data-title="Full-Stack Developer" data-place="Building complete web applications"
+                                data-description="I now combine frontend engineering with Node.js, NestJS, APIs, and databases to build full-stack products from interface to infrastructure.">
                                 <span class="timeline-dot"><i class="fa-solid fa-code-branch"></i></span>
                                 <span class="timeline-year">Now</span>
                                 <span class="timeline-label">Full-Stack</span>
                             </button>
-                            <button class="timeline-node" type="button" data-year="2027" data-title="University Graduation" data-place="Tashkent Amaliy Fanlar Universiteti" data-description="Completing my Computer Engineering degree while continuing to grow through real full-stack product work.">
+                            <button class="timeline-node" type="button" data-year="2027"
+                                data-title="University Graduation" data-place="Tashkent Amaliy Fanlar Universiteti"
+                                data-description="Completing my Computer Engineering degree while continuing to grow through real full-stack product work.">
                                 <span class="timeline-dot"><i class="fa-solid fa-flag-checkered"></i></span>
                                 <span class="timeline-year">2027</span>
                                 <span class="timeline-label">Next goal</span>
@@ -152,98 +185,164 @@
                             <span id="timeline-year" class="timeline-detail-year">2026 - Now</span>
                             <p id="timeline-place" class="timeline-detail-place">Building complete web applications</p>
                             <h3 id="timeline-title" class="timeline-detail-title">Full-Stack Developer</h3>
-                            <p id="timeline-description" class="timeline-detail-copy">I now combine frontend engineering with Node.js, NestJS, APIs, and databases to build full-stack products from interface to infrastructure.</p>
+                            <p id="timeline-description" class="timeline-detail-copy">I now combine frontend engineering
+                                with Node.js, NestJS, APIs, and databases to build full-stack products from interface to
+                                infrastructure.</p>
                         </article>
                     </div>
                 </div>
             </section>
             <section id="skills" class="mt-[10px] scroll-mt-[40px] pb-[40px] sm:mt-[20px]">
-                <div class="mb-[26px] reveal-up">
-                    <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Full-Stack / Skills</p>
-                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Technologies I work with end to end</h2>
-                    <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">From polished user interfaces to APIs and data, I use this stack to build complete web applications.</p>
+                <div class="skills-heading mb-[26px] reveal-up">
+                    <p
+                        class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">
+                        Full-Stack / Skills</p>
+                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Technologies I work with end
+                        to end</h2>
+                    <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">From
+                        polished user interfaces to APIs and data, I use this stack to build complete web applications.
+                    </p>
                 </div>
 
-                <div class="grid gap-[18px] sm:grid-cols-2 xl:grid-cols-3">
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-brands fa-html5 text-[46px] text-[#ff7a36]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">HTML</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Semantic and clean page structure.</p>
+                <div class="skills-layout">
+                    <article class="skill-card skill-feature reveal-up">
+                        <div class="skill-feature-header">
+                            <span class="skill-feature-icon"><i class="fa-solid fa-code-branch"></i></span>
+                            <div>
+                                <p>Primary Stack</p>
+                                <h3>React, Node.js, NestJS</h3>
+                            </div>
+                        </div>
+                        <p class="skill-feature-copy">I connect clean interfaces with API logic, authentication flows,
+                            and database-backed features.</p>
+                        <div class="skill-metrics" aria-label="Skill coverage">
+                            <span><strong>12+</strong> Technologies</span>
+                            <span><strong>4</strong> Core Areas</span>
+                            <span><strong>Full</strong> Product Flow</span>
+                        </div>
                     </article>
 
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-brands fa-css3-alt text-[46px] text-[#42a5ff]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">CSS</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Styling, layout control, and responsive design.</p>
-                    </article>
+                    <div class="skills-groups">
+                        <article class="skill-card skill-group reveal-up">
+                            <div class="skill-group-title">
+                                <span class="skill-group-icon"><i class="fa-solid fa-desktop"></i></span>
+                                <div>
+                                    <p>Frontend</p>
+                                    <h3>Interfaces and client logic</h3>
+                                </div>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <span><i class="fa-brands fa-html5 text-[#ff7a36]"></i> HTML</span>
+                                    <b>92%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 92%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-brands fa-css3-alt text-[#42a5ff]"></i> CSS / Tailwind</span>
+                                    <b>90%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 90%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-brands fa-js text-[#ffd43b]"></i> JavaScript</span>
+                                    <b>84%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 84%;"><span></span></div>
+                            </div>
+                        </article>
 
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-brands fa-js text-[46px] text-[#ffd43b]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">JavaScript</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Interactive behaviors and dynamic UI logic.</p>
-                    </article>
+                        <article class="skill-card skill-group reveal-up">
+                            <div class="skill-group-title">
+                                <span class="skill-group-icon"><i class="fa-brands fa-react"></i></span>
+                                <div>
+                                    <p>React Ecosystem</p>
+                                    <h3>Components and app structure</h3>
+                                </div>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <span><i class="fa-brands fa-react text-[#61dafb]"></i> React</span>
+                                    <b>88%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 88%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-n text-white"></i> Next.js</span>
+                                    <b>76%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 76%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-code text-[#3178c6]"></i> TypeScript</span>
+                                    <b>80%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 80%;"><span></span></div>
+                            </div>
+                        </article>
 
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-brands fa-react text-[46px] text-[#61dafb]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">React</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Component-based frontend development.</p>
-                    </article>
+                        <article class="skill-card skill-group reveal-up">
+                            <div class="skill-group-title">
+                                <span class="skill-group-icon"><i class="fa-solid fa-server"></i></span>
+                                <div>
+                                    <p>Backend</p>
+                                    <h3>APIs and server-side logic</h3>
+                                </div>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <span><i class="fa-brands fa-node-js text-[#7cc043]"></i> Node.js</span>
+                                    <b>82%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 82%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-server text-[#a5b4fc]"></i> Express</span>
+                                    <b>78%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 78%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-layer-group text-[#e0234e]"></i> NestJS</span>
+                                    <b>74%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 74%;"><span></span></div>
+                            </div>
+                        </article>
 
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-n text-[46px] text-white"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">Next.js</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Production-ready React framework.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-code text-[46px] text-[#3178c6]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">TypeScript</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Strongly typed JavaScript.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-brands fa-node-js text-[46px] text-[#7cc043]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">Node.js</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Backend services and server-side JavaScript.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-server text-[46px] text-[#a5b4fc]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">Express</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">RESTful APIs, routing, and backend logic.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-layer-group text-[46px] text-[#e0234e]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">NestJS</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Scalable backend architecture and modular APIs.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-database text-[46px] text-[#60a5fa]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">PostgreSQL</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Structured data, relations, and SQL queries.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-leaf text-[46px] text-[#4ade80]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">MongoDB</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Flexible document storage for application data.</p>
-                    </article>
-
-                    <article class="skill-card reveal-up rounded-[24px] border border-[#31414b] p-[22px] text-center">
-                        <i class="fa-solid fa-plug text-[46px] text-[#fbbf24]"></i>
-                        <h3 class="mt-[16px] text-[22px] font-bold text-white">REST APIs</h3>
-                        <p class="mt-[10px] text-[15px] leading-[26px] text-[#c6d2d8]">Connecting frontend, backend, and external services.</p>
-                    </article>
+                        <article class="skill-card skill-group reveal-up">
+                            <div class="skill-group-title">
+                                <span class="skill-group-icon"><i class="fa-solid fa-database"></i></span>
+                                <div>
+                                    <p>Data and Integration</p>
+                                    <h3>Storage and connected systems</h3>
+                                </div>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-database text-[#60a5fa]"></i> PostgreSQL</span>
+                                    <b>78%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 78%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-leaf text-[#4ade80]"></i> MongoDB</span>
+                                    <b>72%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 72%;"><span></span></div>
+                                <div class="skill-row">
+                                    <span><i class="fa-solid fa-plug text-[#fbbf24]"></i> REST APIs</span>
+                                    <b>84%</b>
+                                </div>
+                                <div class="skill-bar" style="--level: 84%;"><span></span></div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <section id="projects" class="mt-[50px] scroll-mt-[40px] pb-[80px]">
                 <div class="mb-[34px] reveal-up">
-                    <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Portfolio / Projects</p>
-                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Selected work with real product flow</h2>
-                    <p class="mt-[16px] max-w-[780px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">A few projects that show my frontend, API integration, dashboard, and responsive interface work.</p>
+                    <p
+                        class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">
+                        Portfolio / Projects</p>
+                    <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Selected work with real
+                        product flow</h2>
+                    <p class="mt-[16px] max-w-[780px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">A few
+                        projects that show my frontend, API integration, dashboard, and responsive interface work.</p>
                 </div>
 
                 <div class="projects-grid">
@@ -251,10 +350,12 @@
                         <div class="project-preview">
                             <span class="project-badge">ERP System</span>
                             <div class="project-actions">
-                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/TM-Edu" target="_blank" aria-label="Open TM Edu GitHub">
+                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/TM-Edu"
+                                    target="_blank" aria-label="Open TM Edu GitHub">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                                <a class="project-icon-link" href="https://najotedu.vercel.app/" target="_blank" aria-label="Open TM Edu live demo">
+                                <a class="project-icon-link" href="https://najotedu.vercel.app/" target="_blank"
+                                    aria-label="Open TM Edu live demo">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -268,7 +369,8 @@
                         </div>
                         <div class="project-body">
                             <h3>Student & Teacher ERP</h3>
-                            <p>Talabalar va o'qituvchilarni boshqarish uchun dashboard, CRUD flow va responsive admin interface.</p>
+                            <p>Talabalar va o'qituvchilarni boshqarish uchun dashboard, CRUD flow va responsive admin
+                                interface.</p>
                             <ul class="project-features">
                                 <li><i class="fa-solid fa-check"></i> Student and teacher management</li>
                                 <li><i class="fa-solid fa-check"></i> Dashboard and CRUD operations</li>
@@ -290,10 +392,12 @@
                         <div class="project-preview">
                             <span class="project-badge">Movies App</span>
                             <div class="project-actions">
-                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/movies" target="_blank" aria-label="Open Movies App GitHub">
+                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/movies"
+                                    target="_blank" aria-label="Open Movies App GitHub">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                                <a class="project-icon-link" href="https://movies-ivory-three.vercel.app/" target="_blank" aria-label="Open Movies App live demo">
+                                <a class="project-icon-link" href="https://movies-ivory-three.vercel.app/"
+                                    target="_blank" aria-label="Open Movies App live demo">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -307,7 +411,8 @@
                         </div>
                         <div class="project-body">
                             <h3>Film Search Interface</h3>
-                            <p>Kinolarni qidirish, ko'rish va category bo'yicha saralash uchun REST API asosidagi web-ilova.</p>
+                            <p>Kinolarni qidirish, ko'rish va category bo'yicha saralash uchun REST API asosidagi
+                                web-ilova.</p>
                             <ul class="project-features">
                                 <li><i class="fa-solid fa-check"></i> Movie search and details</li>
                                 <li><i class="fa-solid fa-check"></i> Category filtering</li>
@@ -329,10 +434,13 @@
                         <div class="project-preview">
                             <span class="project-badge">E-Commerce</span>
                             <div class="project-actions">
-                                <a class="project-icon-link" href="https://github.com/omaryazliyev2004-op/ecommerce-react" target="_blank" aria-label="Open E-Commerce GitHub">
+                                <a class="project-icon-link"
+                                    href="https://github.com/omaryazliyev2004-op/ecommerce-react" target="_blank"
+                                    aria-label="Open E-Commerce GitHub">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                                <a class="project-icon-link" href="https://ecommerce-react-irx2.vercel.app/" target="_blank" aria-label="Open E-Commerce live demo">
+                                <a class="project-icon-link" href="https://ecommerce-react-irx2.vercel.app/"
+                                    target="_blank" aria-label="Open E-Commerce live demo">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                             </div>
@@ -346,7 +454,8 @@
                         </div>
                         <div class="project-body">
                             <h3>Online Store Application</h3>
-                            <p>Mahsulotlar katalogi, search, filtering va savat funksiyalari bilan to'liq responsive do'kon ilovasi.</p>
+                            <p>Mahsulotlar katalogi, search, filtering va savat funksiyalari bilan to'liq responsive
+                                do'kon ilovasi.</p>
                             <ul class="project-features">
                                 <li><i class="fa-solid fa-check"></i> Product catalog and search</li>
                                 <li><i class="fa-solid fa-check"></i> Shopping cart flow</li>
@@ -358,7 +467,8 @@
                                 <span>REST API</span>
                                 <span>Cart</span>
                             </div>
-                            <a class="project-demo-link" href="https://ecommerce-react-irx2.vercel.app/" target="_blank">
+                            <a class="project-demo-link" href="https://ecommerce-react-irx2.vercel.app/"
+                                target="_blank">
                                 <i class="fa-solid fa-eye"></i> Live Demo
                             </a>
                         </div>
@@ -367,11 +477,17 @@
             </section>
 
             <section id="contact" class="mt-[10px] scroll-mt-[40px] pb-[80px] sm:mt-[20px]">
-                <div class="contact-shell glass-panel reveal-up rounded-[28px] border border-[#2c3942] p-[20px] sm:p-[28px] qq:p-[36px]">
+                <div
+                    class="contact-shell glass-panel reveal-up rounded-[28px] border border-[#2c3942] p-[20px] sm:p-[28px] qq:p-[36px]">
                     <div class="contact-header">
-                        <p class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] max-w-max text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">Get In Touch</p>
-                        <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Let's build something useful</h2>
-                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">Need a responsive website, backend API, database integration, or a complete full-stack product? Reach out and I will get back to you.</p>
+                        <p
+                            class="inline-block rounded-[999px] border border-[#0080ff] bg-[#0080ff1a] px-[16px] py-[8px] max-w-max text-[12px] font-bold uppercase tracking-[2px] text-[#52a8ff]">
+                            Get In Touch</p>
+                        <h2 class="mt-[18px] text-[30px] font-bold text-white sm:text-[38px]">Let's build something
+                            useful</h2>
+                        <p class="mt-[16px] max-w-[760px] text-[16px] leading-[28px] text-[#b9c7cf] sm:text-[18px]">Need
+                            a responsive website, backend API, database integration, or a complete full-stack product?
+                            Reach out and I will get back to you.</p>
                     </div>
 
                     <div class="contact-layout">
@@ -381,7 +497,8 @@
                             </div>
                             <p class="contact-cta-kicker">Available for freelance and product work</p>
                             <h3>Tell me about your project</h3>
-                            <p>I can help turn ideas into clean interfaces, reliable APIs, and database-backed web applications.</p>
+                            <p>I can help turn ideas into clean interfaces, reliable APIs, and database-backed web
+                                applications.</p>
                             <div class="contact-status-row">
                                 <span><i class="fa-solid fa-circle"></i> Open to work</span>
                                 <span><i class="fa-solid fa-location-dot"></i> Uzbekistan</span>
