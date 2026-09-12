@@ -263,9 +263,6 @@
   .h-\[9px\] {
     height: 9px;
   }
-  .h-\[95px\] {
-    height: 95px;
-  }
   .min-h-\[320px\] {
     min-height: 320px;
   }
@@ -312,9 +309,6 @@
   .scroll-mt-\[40px\] {
     scroll-margin-top: 40px;
   }
-  .flex-col-reverse {
-    flex-direction: column-reverse;
-  }
   .items-center {
     align-items: center;
   }
@@ -326,9 +320,6 @@
   }
   .gap-\[18px\] {
     gap: 18px;
-  }
-  .gap-\[40px\] {
-    gap: 40px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -546,36 +537,6 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .vv\:\!hidden {
-    @media (width >= 900px) {
-      display: none !important;
-    }
-  }
-  .vv\:flex {
-    @media (width >= 900px) {
-      display: flex;
-    }
-  }
-  .vv\:inline-flex {
-    @media (width >= 900px) {
-      display: inline-flex;
-    }
-  }
-  .qq\:h-\[125px\] {
-    @media (width >= 1050px) {
-      height: 125px;
-    }
-  }
-  .qq\:flex-row {
-    @media (width >= 1050px) {
-      flex-direction: row;
-    }
-  }
-  .qq\:items-center {
-    @media (width >= 1050px) {
-      align-items: center;
-    }
-  }
   .qq\:p-\[36px\] {
     @media (width >= 1050px) {
       padding: 36px;
@@ -594,11 +555,6 @@
   .sm\:mt-\[110px\] {
     @media (width >= 40rem) {
       margin-top: 110px;
-    }
-  }
-  .sm\:h-\[110px\] {
-    @media (width >= 40rem) {
-      height: 110px;
     }
   }
   .sm\:min-h-\[406px\] {
@@ -844,6 +800,54 @@ body {
   background: linear-gradient(90deg, #0080ff, #7dd3fc);
   box-shadow: 0 0 12px rgba(82, 168, 255, 0.9);
   transition: width 0.08s linear;
+}
+.hero-spacer {
+  height: 95px;
+}
+@media (min-width: 640px) {
+  .hero-spacer {
+    height: 115px;
+  }
+}
+@media (min-width: 1050px) {
+  .hero-spacer {
+    height: 140px;
+  }
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (min-width: 1050px) {
+  .hero-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 900px) {
+  .vv-flex {
+    display: flex !important;
+  }
+  .vv-inline-flex {
+    display: inline-flex !important;
+  }
+  .vv-hidden {
+    display: none !important;
+  }
+}
+@media (min-width: 1050px) {
+  .qq-flex-row {
+    flex-direction: row !important;
+  }
+  .qq-items-center {
+    align-items: center !important;
+  }
+  .qq-p-36 {
+    padding: 36px !important;
+  }
 }
 .container {
   max-width: 1200px;

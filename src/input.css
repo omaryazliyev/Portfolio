@@ -203,6 +203,47 @@ body {
     --breakpoint-qq: 1050px;
 }
 
+/* ── Custom Responsive Utilities ─────────────── */
+.hero-spacer {
+    height: 95px;
+}
+@media (min-width: 640px) {
+    .hero-spacer {
+        height: 115px;
+    }
+}
+@media (min-width: 1050px) {
+    .hero-spacer {
+        height: 140px;
+    }
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+@media (min-width: 1050px) {
+    .hero-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .vv-flex { display: flex !important; }
+    .vv-inline-flex { display: inline-flex !important; }
+    .vv-hidden { display: none !important; }
+}
+
+@media (min-width: 1050px) {
+    .qq-flex-row { flex-direction: row !important; }
+    .qq-items-center { align-items: center !important; }
+    .qq-p-36 { padding: 36px !important; }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
