@@ -281,9 +281,6 @@
   .max-w-\[560px\] {
     max-width: 560px;
   }
-  .max-w-\[605px\] {
-    max-width: 605px;
-  }
   .max-w-\[760px\] {
     max-width: 760px;
   }
@@ -428,9 +425,6 @@
   .text-\[16px\] {
     font-size: 16px;
   }
-  .text-\[18px\] {
-    font-size: 18px;
-  }
   .text-\[24px\] {
     font-size: 24px;
   }
@@ -452,10 +446,6 @@
     --tw-leading: 28px;
     line-height: 28px;
   }
-  .leading-\[32px\] {
-    --tw-leading: 32px;
-    line-height: 32px;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -463,10 +453,6 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
-  }
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
   }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
@@ -600,12 +586,6 @@
   .sm\:pt-\[53px\] {
     @media (width >= 40rem) {
       padding-top: 53px;
-    }
-  }
-  .sm\:text-xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .sm\:text-\[14px\] {
