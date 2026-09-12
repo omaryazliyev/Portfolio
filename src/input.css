@@ -205,16 +205,16 @@ body {
 
 /* ── Custom Responsive Utilities ─────────────── */
 .hero-spacer {
-    height: 95px;
+    height: 140px;
 }
 @media (min-width: 640px) {
     .hero-spacer {
-        height: 115px;
+        height: 175px;
     }
 }
 @media (min-width: 1050px) {
     .hero-spacer {
-        height: 140px;
+        height: 220px;
     }
 }
 
