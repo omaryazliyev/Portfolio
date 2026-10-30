@@ -770,10 +770,8 @@ body {
 }
 
 .skills-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-    gap: 20px;
-    align-items: stretch;
+    display: block;
+    width: 100%;
 }
 
 .skill-feature {
